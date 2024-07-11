@@ -1,9 +1,35 @@
 body{
-    background-color: aquamarine;
+    background-color: rgb(17, 161, 9);
 }
-@media (max-width: 768px){
-    body{background-color: yellow;}
+h2{
+    background-color: antiquewhite;
 }
-@media (max-width: 480px){
-    body, h1, h3{background-color: blue;}
+@media screen and (max-width: 768px){
+    body{
+        background-color: yellow;
+    }
+    h1{
+        background-color: gold;
+    }
+    h2{
+        background-color: green;
+    }
+    p{
+        background-color: bisque;
+    }
 }
+@media screen and (max-width: 480px){
+    body {
+        background-color: blue;
+    }
+    h1{
+        background-color: blueviolet;
+    }
+    h2{
+        background-color: brown;
+    }
+    p{
+        background-color: aqua;
+    }
+}
+
