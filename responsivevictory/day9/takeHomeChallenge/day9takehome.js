@@ -41,9 +41,12 @@
 //    If either a or b is a floating-point number, the function should round it to the nearest integer before performing the calculation.
 //    If the sum of a and b is greater than 100, the function should return an error message "Sum is too large"
 let calculateSum = (a, b) => {
-  a = a === undefined || a === null ? 0 : a;
-  b = b === undefined || b === null ? 0 : b;
-
+  if (a === undefined || a === null) {
+    return 0;
+  }
+  if (b === undefined || b === null) {
+    return 0;
+  }
   if (typeof a !== "number" || typeof b !== "number") {
     return "please provide valid numbers";
   }
